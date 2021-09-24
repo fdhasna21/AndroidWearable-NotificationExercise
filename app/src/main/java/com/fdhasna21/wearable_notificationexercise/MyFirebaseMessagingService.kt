@@ -44,9 +44,9 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     private fun showNotification(title:String?, message:String?, dataMap:NotificationData?) {
         val intent = Intent(baseContext, ShowNotificationActivity::class.java).apply {
-//            data = Uri.parse("custom://" + System.currentTimeMillis())
-//            action = "actionString" + System.currentTimeMillis()
-//            flags = Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP
+            data = Uri.parse("custom://" + System.currentTimeMillis())
+            action = "actionString" + System.currentTimeMillis()
+            flags = Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP
             putExtra("title", title)
             putExtra("message", message)
             putExtra("data", dataMap)

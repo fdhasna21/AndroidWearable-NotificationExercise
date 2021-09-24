@@ -1,10 +1,11 @@
 package com.fdhasna21.wearable_notificationexercise
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
 import android.os.Bundle
+import android.view.View
 import com.fdhasna21.wearable_notificationexercise.databinding.ActivityShowNotificationBinding
 
-class ShowNotificationActivity : AppCompatActivity() {
+    class ShowNotificationActivity : Activity() {
     private lateinit var binding : ActivityShowNotificationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,9 +17,23 @@ class ShowNotificationActivity : AppCompatActivity() {
         val data = intent.getParcelableExtra<NotificationData>("data")
 
         binding.apply {
-            showTitle.text = "Title : $title"
-            showMessage.text = "Message : $message"
-            showContent.text = "Content : $data"
+            showTitle.text = "Title   : \n$title"
+            showMessage.text = "Message : \n$message"
+            when(data?.activityReceiver){
+                "ShowAnimalActivity" -> {
+                    showContent.text = "Animal : ${data.dataAnimal?.name}"
+                }
+                "ShowShapeActivity" -> {
+                    val width : Float = data.dataShape?.width!!.toFloat()
+                    val length : Float = data.dataShape?.length!!.toFloat()
+                    showContent.text  = "Length  : ${length}\n" +
+                                        "Width   : ${width}\n" +
+                                        "Area    : ${length*width}"
+                }
+                else -> {
+                    showContent.visibility = View.GONE
+                }
+            }
         }
     }
 }

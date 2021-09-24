@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowNotificationActivity">
+    tools:context=".ShowNotificationActivity"
+    android:padding="30dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,21 +23,18 @@
             android:id="@+id/showTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="Title"/>
 
         <TextView
             android:id="@+id/showMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="Message"/>
 
         <TextView
             android:id="@+id/showContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="Content"/>
     </LinearLayout>
 
