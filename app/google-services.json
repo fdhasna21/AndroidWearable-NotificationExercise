@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "465738059044",
+    "project_id": "notificationexercise",
+    "storage_bucket": "notificationexercise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465738059044:android:1f6c67ce249832237d77b1",
+        "android_client_info": {
+          "package_name": "com.fdhasna21.wearable_notificationexercise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465738059044-s74sierketd8s81ub4uetlhf544qei96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtDtRuHkNjD-k-oFJJtp0iiimv4EG_Eco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465738059044-s74sierketd8s81ub4uetlhf544qei96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465738059044:android:290ece04e4fbe8d47d77b1",
+        "android_client_info": {
+          "package_name": "com.tugas.notificationexercise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465738059044-tpeaorulq7ipukdln0puho8jimd3utgp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tugas.notificationexercise",
+            "certificate_hash": "2a4c4ddbf739867e17a5b9f05bfab365b09fad17"
+          }
+        },
+        {
+          "client_id": "465738059044-s74sierketd8s81ub4uetlhf544qei96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtDtRuHkNjD-k-oFJJtp0iiimv4EG_Eco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465738059044-s74sierketd8s81ub4uetlhf544qei96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
